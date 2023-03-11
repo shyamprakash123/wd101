@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Registration Form</title>
+  
+</head>
+<body">
+    
+    <div class="container">
+      <div class="form-box">
+        <div class="input-ff">
+          <form id="user-form">
+            <div class="title">
+              <h1>Registration Form</h1>
+            </div>
+            <div class="input-box">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="input-field" placeholder="Enter full name" required>
+            </div>
+              <div class="input-box">
+                <label for="email">Email</label>
+              <input type="email" id="email" class="input-field" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              </div>
+              <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Enter password" required>
+              </div>
+              <div class="input-box">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" class="input-field" style="color: red; font-size: small;"  required >
+              </div>
+              <div class="input-checkbox">
+                <input type="checkbox" id="checkbox" class="checkbox-field" required>
+                <label for="checkbox" style="width: fit-content;">Accept Trems & Conditions</label>
+              </div>
+              <div class="input-btn">
+                <button type="submit" id="button">Submit</button>
+              </div>
+          </form>
+        </div>
+
+        <div class="table-box">
+          <div class="title">
+            <h1>Entries</h1>
+          </div>
+
+          <div class="table-ele">
+            <table id="table" style="width: 100%;"></table>
+          </div>
+        </div>
+
+
+      </div>
+
+      
+        
+      </div>
+      
+</body>
+<script src="./index.js"></script>
+</html>
